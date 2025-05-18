@@ -21,6 +21,7 @@
       discord
       steam
       ffmpeg
+      spotify-player
     ];
   
     keyboard = {
