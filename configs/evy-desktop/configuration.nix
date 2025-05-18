@@ -15,15 +15,11 @@
   
   hardware.graphics = {
     enable = true;
+    enable32Bit = true;
     extraPackages = with pkgs; [nvidia-vaapi-driver egl-wayland];
   };
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia.open = false;
-
-  hardware.opengl = {
-    enable = true;
-    driSupport32Bit = true;
-  };
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;

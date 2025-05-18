@@ -6,18 +6,22 @@
     homeDirectory = "/home/evy";
 
     packages = with pkgs; [
+      # Hyprland
       hyprland
-      fastfetch
-      brave
       foot
       wofi
+      waybar
+      
+      # Misc
+      fastfetch
+      brave
       discord
       steam
     ];
   
     keyboard = {
       layout = "us";
-      variant = "colemak_dh_iso";
+      variant = "colemak_dh";
     };
 
     file = {
