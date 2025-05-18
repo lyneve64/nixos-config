@@ -49,7 +49,7 @@
   services.xserver = {
     enable = true;
     displayManager.gdm.enable = true;
-    
+    # desktopManager.gnome.enable = true;   
     xkb = {
       layout = "us";
       variant = "colemak_dh";
@@ -82,6 +82,7 @@
   };
 
   # programs.firefox.enable = true;
+  programs.hyprland.enable = true;
   
   # List packages installed in system profile. To search, run:
   # $ nix search wget

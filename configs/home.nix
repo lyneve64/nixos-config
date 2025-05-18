@@ -11,12 +11,16 @@
       foot
       wofi
       waybar
+      hyprpaper
+      hyprcursor
+      hyprshot
       
       # Misc
       fastfetch
       brave
       discord
       steam
+      ffmpeg
     ];
   
     keyboard = {
@@ -37,19 +41,36 @@
 	source = ./files/Bibata-Original-Classic;
 	target = ".icons/Bibata-Original-Classic";
       };
+      "Waybar" = {
+        enable = true;
+	recursive = true;
+	source = ./files/waybar;
+	target = ".config/waybar";
+      };
+      "Foot" = {
+        enable = true;
+	recursive = true;
+	source = ./files/foot;
+	target = ".config/foot";
+      };
     };
   };
 
   programs = {
-    fish.enable = true;
+    fish = {
+      enable = true;
+      interactiveShellInit = ''
+        set fish_greeting
+      '';
+    };
 
     starship = {
       enable = true;
 
       settings = {
         format = ''
-          [╭──╴](bold blue)$username[@](bold blue)$hostname[ ❬](bold blue)$directory[❭](bold blue)$nix_shell
-          [╰╴](bold blue)
+          [╭──╴](bold gray)$username[@](bold gray)$hostname[ ❬](bold gray)$directory[❭](bold gray)$nix_shell
+          [╰╴](bold gray)
         '';
 
         add_newline = true;
@@ -57,18 +78,18 @@
         username = {
           show_always = true;
           style_root = "bold red";
-          style_user = "bold yellow";
+          style_user = "bold light_gray";
           format = "[$user]($style)";
         };
 
         hostname = {
 	  ssh_only = false;
-          style = "bold yellow";
+          style = "bold light_gray";
           format = "[$hostname]($style)";
         };
 
         directory = {
-          style = "bold yellow";
+          style = "bold light_gray";
           read_only = " [READ ONLY]";
           read_only_style = "bold red";
           format = "[$path]($style)[$read_only]($read_only_style)";
@@ -78,6 +99,13 @@
           symbol = " NIX-SHELL ";
 	  style = "bold red";
           format = "[$symbol]($style)";
+        };
+
+	palette = "grays";
+
+	palettes.grays = {
+	  gray = "#555d5b";
+	  light_gray = "#c5c4c4";
         };
       };
     };

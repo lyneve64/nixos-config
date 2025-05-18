@@ -1,0 +1,62 @@
+* {
+    border: none;
+    border-radius: 0;
+    /*font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;*/
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(30, 31, 30, 0.5);
+    border-bottom: 3px solid rgba(84, 84, 92, 0.5);
+    color: white;
+}
+
+tooltip {
+  background: rgba(30, 31, 30, 0.5);
+  border: 1px solid rgba(84, 84, 92, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: white;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+    background: rgba(197, 196, 196, 1);
+    border-bottom: 3px solid white;
+}
+
+#disk, #memory, #pulseaudio, #clock {
+    padding: 0 10px;
+}
+
+#disk {
+    background-color: rgba(114, 114, 114, 1);
+}
+
+#memory {
+    background-color: rgba(140, 139, 148, 1);
+}
+
+#pulseaudio {
+    background-color: rgba(140, 148, 145, 1);
+}
+
+#clock {
+    background-color: rgba(84, 92, 91, 1);
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+
