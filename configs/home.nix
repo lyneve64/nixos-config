@@ -6,10 +6,13 @@
     homeDirectory = "/home/evy";
 
     packages = with pkgs; [
+      hyprland
       fastfetch
       brave
       foot
       wofi
+      discord
+      steam
     ];
   
     keyboard = {
@@ -21,8 +24,14 @@
       "Hyprland" = {
         enable = true;
 	recursive = true;
-	source = ./dotfiles/hypr;
+	source = ./files/hypr;
 	target = ".config/hypr";
+      };
+      "Bibata Cursor" = {
+        enable = true;
+	recursive = true;
+	source = ./files/Bibata-Original-Classic;
+	target = ".icons/Bibata-Original-Classic";
       };
     };
   };

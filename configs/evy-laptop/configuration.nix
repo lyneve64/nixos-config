@@ -38,13 +38,15 @@
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
 
-
-  
-
   # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "colemak_dh_iso";
+  services.xserver = {
+    enable = true;
+    DisplayManager.gdm.enable = true;
+
+    xkb = {
+      layout = "us";
+      variant = "colemak_dh_iso";
+    };
   };
   
   #services.xserver.xkb.options = "eurosign:e,caps:escape";
