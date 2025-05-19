@@ -30,6 +30,8 @@
       fastfetch
       nix-search-cli
       rclone
+      bitwarden-cli
+      bitwarden-desktop
     ];
   
     keyboard = {
