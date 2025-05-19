@@ -16,12 +16,20 @@
       hyprshot
       
       # Misc
-      fastfetch
       brave
       discord
+      obsidian
+
+      # Entertainment / Multimedia
       steam
       ffmpeg
       spotify-player
+      atlauncher
+
+      # Tools
+      fastfetch
+      nix-search-cli
+      rclone
     ];
   
     keyboard = {
@@ -63,6 +71,11 @@
       interactiveShellInit = ''
         set fish_greeting
       '';
+      shellAliases = {
+        ls = "ls -al";
+	v = "nvim";
+	rebuild = "sudo nixos-rebuild switch --flake .#";
+      };
     };
 
     starship = {
