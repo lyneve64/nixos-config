@@ -19,12 +19,14 @@
       brave
       discord
       obsidian
+      jdk
 
       # Entertainment / Multimedia
       steam
       ffmpeg
       spotify-player
       atlauncher
+      zrythm
 
       # Tools
       fastfetch
@@ -77,6 +79,7 @@
         ls = "ls -al";
 	v = "nvim";
 	rebuild = "sudo nixos-rebuild switch --flake .#";
+	nix-shell-init = "cp ~/nixos-config/configs/files/shell.nix .";
       };
     };
 

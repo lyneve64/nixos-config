@@ -1,0 +1,52 @@
+20:04:57.006 [ATL-Logging-Thread] INFO  - Organising filesystem
+
+20:04:57.010 [ATL-Logging-Thread] INFO  - ATLauncher Version: 3.4.38.2 [b6f3b1ac61b9be9f3d4573d01dc291077f7ad130]
+
+20:04:57.011 [ATL-Logging-Thread] INFO  - App Arguments: ["--working-dir","**USERSDIR**","--no-launcher-update"]
+
+20:04:57.012 [ATL-Logging-Thread] INFO  - JVM Arguments: []
+
+20:04:57.012 [ATL-Logging-Thread] INFO  - Java Version: Java 21 (21.0.5)
+
+20:04:57.014 [ATL-Logging-Thread] INFO  - Java Path: /nix/store/k7sl9awa4r5i8z3fj8wz90cac1v7s5n7-openjdk-21.0.5+11/lib/openjdk
+
+20:04:57.015 [ATL-Logging-Thread] INFO  - 64 Bit Java: true
+
+20:04:57.051 [ATL-Logging-Thread] INFO  - RAM Available: 15953MB
+
+20:04:57.055 [ATL-Logging-Thread] INFO  - Launcher Directory: **USERSDIR**
+
+20:04:57.132 [ATL-Logging-Thread] INFO  - GPU: GM206 [GeForce GTX 960] (NVIDIA Corporation (0x10de)) unknown 288MB VRAM
+
+20:04:57.321 [ATL-Logging-Thread] INFO  - CPU: AMD FX(tm)-6300 Six-Core Processor 6 cores/6 threads
+
+20:04:57.327 [ATL-Logging-Thread] INFO  - Operating System: NixOS (25.05 (Warbler) build 6.12.26)
+
+20:04:57.338 [ATL-Logging-Thread] INFO  - Bitness: 64
+
+20:04:57.339 [ATL-Logging-Thread] INFO  - Uptime: 20467
+
+20:04:57.345 [ATL-Logging-Thread] INFO  - Manufacturer: GNU/Linux
+
+20:04:57.346 [ATL-Logging-Thread] INFO  - Showing splash screen and loading everything
+
+20:04:57.351 [ATL-Logging-Thread] INFO  - Checking for updated files!
+
+20:05:02.601 [ATL-Logging-Thread] INFO  - Launcher finished loading everything
+
+20:05:02.613 [ATL-Logging-Thread] INFO  - Launcher opening
+
+20:05:02.614 [ATL-Logging-Thread] INFO  - Made By Bob*
+
+20:05:02.614 [ATL-Logging-Thread] INFO  - *(Not Actually)
+
+20:05:02.629 [ATL-Logging-Thread] INFO  - Setting up Bottom Bar
+
+20:05:02.717 [ATL-Logging-Thread] INFO  - Finished Setting up Bottom Bar
+
+20:05:02.718 [ATL-Logging-Thread] INFO  - Setting up Tabs
+
+20:05:03.412 [ATL-Logging-Thread] INFO  - Finished Setting up Tabs
+
+20:05:03.440 [ATL-Logging-Thread] INFO  - Showing Launcher
+
