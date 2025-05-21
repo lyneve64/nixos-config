@@ -26,7 +26,7 @@
       ffmpeg
       spotify-player
       atlauncher
-      zrythm
+      ardour
 
       # Tools
       fastfetch
@@ -34,6 +34,7 @@
       rclone
       bitwarden-cli
       bitwarden-desktop
+      nautilus
     ];
   
     keyboard = {
@@ -44,27 +45,33 @@
     file = {
       "Hyprland" = {
         enable = true;
-	recursive = true;
-	source = ./files/hypr;
-	target = ".config/hypr";
+	    recursive = true;
+	    source = ./files/hypr;
+	    target = ".config/hypr";
       };
       "Bibata Cursor" = {
         enable = true;
-	recursive = true;
-	source = ./files/Bibata-Original-Classic;
-	target = ".icons/Bibata-Original-Classic";
+	    recursive = true;
+	    source = ./files/Bibata-Original-Classic;
+	    target = ".icons/Bibata-Original-Classic";
       };
       "Waybar" = {
         enable = true;
-	recursive = true;
-	source = ./files/waybar;
-	target = ".config/waybar";
+	    recursive = true;
+	    source = ./files/waybar;
+	    target = ".config/waybar";
       };
       "Foot" = {
         enable = true;
-	recursive = true;
-	source = ./files/foot;
-	target = ".config/foot";
+	    recursive = true;
+	    source = ./files/foot;
+	    target = ".config/foot";
+      };
+      "LV2 Plugins" = {
+        enable = true;
+	    recursive = true;
+	    source = ./files/lv2;
+	    target = ".lv2";
       };
     };
   };
