@@ -83,6 +83,8 @@
 
   # programs.firefox.enable = true;
   programs.hyprland.enable = true;
+
+  services.flatpak.enable = true;
   
   # List packages installed in system profile. To search, run:
   # $ nix search wget
