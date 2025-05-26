@@ -19,15 +19,15 @@
       brave
       discord
       obsidian
-      #jdk
 
       # Entertainment / Multimedia
       steam
       ffmpeg
       spotify-player
-      #atlauncher
       ardour
+      bespokesynth
       r2modman
+      heroic
 
       # Tools
       fastfetch
