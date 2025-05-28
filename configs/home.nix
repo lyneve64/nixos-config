@@ -28,6 +28,7 @@
       bespokesynth
       r2modman
       heroic
+      godot
 
       # Tools
       fastfetch
@@ -36,6 +37,7 @@
       bitwarden-cli
       bitwarden-desktop
       nautilus
+      nodejs_24
     ];
   
     keyboard = {
@@ -74,6 +76,12 @@
 	    source = ./files/lv2;
 	    target = ".lv2";
       };
+      "Neovim" = {
+        enable = true;
+        recursive = true;
+        source = ./files/nvim;
+        target = ".config/nvim";
+      };
     };
   };
 
@@ -84,10 +92,10 @@
         set fish_greeting
       '';
       shellAliases = {
-        ls = "ls -al";
-	v = "nvim";
-	rebuild = "sudo nixos-rebuild switch --flake .#";
-	nix-shell-init = "cp ~/nixos-config/configs/files/shell.nix .";
+        ls = "ls -al --color=auto";
+	    v = "nvim";
+	    rebuild = "sudo nixos-rebuild switch --flake .#";
+	    nix-shell-init = "cp ~/nixos-config/configs/files/shell.nix .";
       };
     };
 

@@ -39,10 +39,10 @@
       {
         home-manager = {
           useGlobalPkgs = true;
-	  useUserPackages = true;
-	  # backupFileExtension = "backup";
+	      useUserPackages = true;
+	      backupFileExtension = "backup";
 
-	  users.evy = import ./configs/home.nix;
+	      users.evy = import ./configs/home.nix;
         };
       }
       ];
@@ -59,10 +59,10 @@
       {
         home-manager = {
           useGlobalPkgs = true;
-	  useUserPackages = true;
-	  # backupFileExtension = "backup";
+	      useUserPackages = true;
+	      backupFileExtension = "backup";
 
-	  users.evy = import ./configs/home.nix;
+	      users.evy = import ./configs/home.nix;
         };
       }
       ];

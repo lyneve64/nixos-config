@@ -57,6 +57,11 @@
   };
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
 
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+  services.blueman.enable = true;
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
