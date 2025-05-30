@@ -1,0 +1,17 @@
+/** {
+    border: none;
+    border-radius: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+} */
+
+#window {
+    background-color: rgba(30, 31, 30, 0.7);
+    color: white;
+}
+
+#input {
+    background-color: rgba(30, 31, 30, 0.7);
+    color: white;
+}

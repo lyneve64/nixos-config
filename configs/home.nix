@@ -37,7 +37,8 @@
       bitwarden-cli
       bitwarden-desktop
       nautilus
-      nodejs_24
+      vscodium
+      faudio
     ];
   
     keyboard = {
