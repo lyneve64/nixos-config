@@ -6,7 +6,7 @@
     homeDirectory = "/home/evy";
 
     packages = with pkgs; [
-      # Hyprland
+      # Hyprland & Hyprland-Related
       hyprland
       foot
       wofi
@@ -15,30 +15,35 @@
       hyprcursor
       hyprshot
       
-      # Misc
-      brave
-      discord
-      obsidian
-
-      # Entertainment / Multimedia
+      # Games
       steam
-      ffmpeg
-      spotify-player
-      ardour
-      bespokesynth
       r2modman
       heroic
-      godot
 
-      # Tools
+      # Multimedia
+      ffmpeg
+      spotify-player
+      faudio
+      spotify
+
+      # CLI Tools
       fastfetch
       nix-search-cli
       rclone
       bitwarden-cli
+
+      # Creative / Development
+      obsidian
+      ardour
+      bespokesynth
+      godot
+      vscodium
+
+      # Misc. Tools
+      brave
+      discord
       bitwarden-desktop
       nautilus
-      vscodium
-      faudio
     ];
   
     keyboard = {
@@ -150,7 +155,6 @@
       enable = true;
       userEmail = "evelynveraart@gmail.com";
       userName = "lyneve64";
-
     };
 
   };
