@@ -20,7 +20,7 @@
     displayManager.gdm.enable = true;
     xkb = {
       layout = "us";
-      variant = "colemak_dh";
+      variant = "";
     };
   };
 
