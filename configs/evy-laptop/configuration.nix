@@ -12,6 +12,8 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  nixpkgs.config.allowUnfree = true;
+
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -41,7 +43,7 @@
   # Configure keymap in X11
   services.xserver = {
     enable = true;
-    DisplayManager.gdm.enable = true;
+    displayManager.gdm.enable = true;
 
     xkb = {
       layout = "us";
