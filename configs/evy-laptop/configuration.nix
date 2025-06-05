@@ -13,6 +13,8 @@
 
   networking.hostName = "evy-laptop"; # Define your hostname.
 
+  environment.systemPackages = with pkgs; [ acpi ];
+
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
 
