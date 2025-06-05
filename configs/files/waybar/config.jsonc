@@ -2,13 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": [/*"disk", "memory", */"pulseaudio", "clock"],
-    "disk": {
-        "format": "Disk: {used} / {total} ({percentage_used}%)"
-    },
-    "memory": {
-	"format": "Mem: {used}GiB / {total}GiB ({percentage}%)"
-    },
+    "modules-right": ["pulseaudio", "clock"],
     "pulseaudio": {
 	"format": "Vol: {volume}%"
     },

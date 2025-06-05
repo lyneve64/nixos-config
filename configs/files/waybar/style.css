@@ -32,16 +32,8 @@ tooltip label {
     border-bottom: 3px solid white;
 }
 
-#disk, #memory, #pulseaudio, #clock {
+#pulseaudio, #clock {
     padding: 0 10px;
-}
-
-#disk {
-    background-color: rgba(114, 114, 114, 1);
-}
-
-#memory {
-    background-color: rgba(140, 139, 148, 1);
 }
 
 #pulseaudio {
