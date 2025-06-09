@@ -31,6 +31,7 @@
       nix-search-cli
       rclone
       bitwarden-cli
+      btop
 
       # Creative / Development
       obsidian
@@ -84,10 +85,16 @@
 	target = ".lv2";
       };
       "Neovim" = {
-        enable = true;
+        enable = false;
         recursive = true;
         source = ./files/nvim;
         target = ".config/nvim";
+      };
+      "Btop" = {
+        enable = false;
+        recursive = true;
+        source = ./files/btop;
+        target = ".config/btop";
       };
     };
   };
