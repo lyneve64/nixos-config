@@ -19,6 +19,7 @@
       steam
       r2modman
       heroic
+      prismlauncher
 
       # Multimedia
       ffmpeg
@@ -40,6 +41,7 @@
       godot
       vscodium
       gcc
+      krita
 
       # Misc. Tools
       brave
@@ -91,7 +93,7 @@
         target = ".config/nvim";
       };
       "Btop" = {
-        enable = false;
+        enable = true;
         recursive = true;
         source = ./files/btop;
         target = ".config/btop";

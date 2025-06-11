@@ -22,6 +22,7 @@
       layout = "us";
       variant = "";
     };
+    wacom.enable = true;
   };
 
   hardware.bluetooth = {

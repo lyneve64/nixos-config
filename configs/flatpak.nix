@@ -7,7 +7,6 @@
   services.flatpak.uninstallUnmanaged = true;
 
   services.flatpak.packages = [
-    "com.atlauncher.ATLauncher"
   ];
 
 }
