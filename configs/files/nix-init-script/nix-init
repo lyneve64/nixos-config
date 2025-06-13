@@ -1,0 +1,16 @@
+#!/usr/bin/env fish
+if test "$(count $argv)" -eq 0 || test "$(count $argv)" -gt 1
+	echo '[ERROR] Too many arguments'
+	echo 'Usage: nix-init [arg]'
+	return
+end
+
+switch $argv[1]
+	case shell
+		echo 'Creating shell.nix'
+		command cp ~/nixos-config/configs/files/nix-init-script/shell.nix .
+		return
+	case '*'
+		echo 'Invalid argument!'
+		return
+end

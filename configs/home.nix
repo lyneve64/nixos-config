@@ -109,9 +109,9 @@
       '';
       shellAliases = {
         ls = "ls -al --color=auto";
-	    v = "nvim";
-	    rebuild = "sudo nixos-rebuild switch --flake .#";
-	    nix-shell-init = "cp ~/nixos-config/configs/files/shell.nix .";
+	v = "nvim";
+	rebuild = "sudo nixos-rebuild switch --flake .#";
+	nix-init = "~/nixos-config/configs/files/nix-init-script/./nix-init";
       };
     };
 

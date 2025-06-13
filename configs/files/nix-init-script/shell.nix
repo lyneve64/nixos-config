@@ -8,5 +8,5 @@ pkgs.mkShellNoCC {
 
   ];
 
-  shellHook = "fish && exit";
+  shellHook = "fish; exit";
 }
