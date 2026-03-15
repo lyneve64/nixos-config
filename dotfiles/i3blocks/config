@@ -1,0 +1,8 @@
+[volume]
+command=wpctl get-volume @DEFAULT_SINK@
+interval=once
+signal=10
+
+[time]
+command=date +'%-d.%-m.%Y - %H:%M:%S'
+interval=1

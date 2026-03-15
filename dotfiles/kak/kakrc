@@ -1,0 +1,22 @@
+colorscheme gruvbox-dark
+add-highlighter global/ number-lines -hlcursor -relative -min-digits 3
+add-highlighter global/ show-matching
+set-option global tabstop 2
+set-option global indentwidth 2
+set-option global scrolloff 8,3
+
+declare-option str  terminal_assistant none
+
+eval %sh{kak-lsp}
+lsp-enable
+
+source "%val{config}/plugins/plug.kak/rc/plug.kak"
+plug "andreyorst/plug.kak" noload
+
+plug "andreyorst/powerline.kak" defer powerline_gruvbox %{
+    powerline-theme gruvbox
+    powerline-separator triangle
+    powerline-format global 'git bufname filetype mode_info lsp line_column position'
+} config %{
+    powerline-start
+}

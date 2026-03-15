@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+if [[ "$#" == 0 ]] || [[ "$#" -gt 1 ]]; then
+    echo '[ERROR] invalid amount of arguments'
+    echo 'Usage: nix-init [arg]'
+    echo 'Valid arguments: shell, c-starter, cpp-starter'
+    exit
+fi
+
+case "$1" in
+    shell)
+        echo 'Creating shell.nix'
+        command cp ~/nix-init/shell.nix .
+        exit;;
+    c-starter)
+        echo 'Creating basic C project'
+        command cp -R ~/nix-init/c-starter/* .
+        exit;;
+		cpp-starter)
+				echo 'Creating basic C++ project'
+				command cp -R ~/nix-init/cpp-starter/* .
+				exit;;
+    *)
+        echo 'Invalid argument!'
+        echo 'Valid arguments: shell, c-starter, cpp-starter'
+        exit;;
+esac
+
