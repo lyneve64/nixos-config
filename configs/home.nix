@@ -7,19 +7,21 @@
 
     packages = with pkgs; [
       # Window Manager Stuffs
-      sway
-      dmenu
-      i3blocks
-      mako
-      grim
-      jq
-      libnotify
+      #sway
+      #dmenu
+      #i3blocks
+      #mako
+      #grim
+      #jq
+      #libnotify
+      nautilus
 
       # Social & Gaming
       discord
       prismlauncher
       r2modman
       steam
+      heroic
 
       # Commandline Tools
       kakoune
@@ -32,10 +34,14 @@
       unzip
       tree
 
+      # Tools
+      godot
+
       # Media
       firefox
       feishin
       ffmpeg
+      spotify
     ];
 
     keyboard = {
@@ -46,7 +52,7 @@
     file = {
       # Dotfiles
       "Sway" = {
-        enable = true;
+        enable = false;
         recursive = true;
         source = ../dotfiles/sway;
 				target = ".config/sway";
@@ -64,7 +70,7 @@
 				target = ".config/kak";
       };
       "i3blocks" = {
-        enable = true;
+        enable = false;
         recursive = true;
         source = ../dotfiles/i3blocks;
 				target = ".config/i3blocks";

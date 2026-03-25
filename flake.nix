@@ -43,6 +43,24 @@
       	}
       	];
     };
+    evy-laptop = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit system; };
+
+      modules = [
+      	./configs/evy-laptop/configuration.nix
+
+      	home-manager.nixosModules.home-manager
+      	{
+      	  home-manager = {
+      	    useGlobalPkgs = true;
+	    	  useUserPackages = true;
+	    	  backupFileExtension = "backup";
+
+	    	  users.evy = import ./configs/home.nix;
+      	  };
+      	}
+      	];
+    };
   };
 
   homeConfigurations = {
